@@ -18,5 +18,5 @@ for i in range(pocet_suborov()):
     retaz_slov += 1
     if retaz_slov == len(a):
         retaz_slov -= len(a)
-    with open(f"""slovo{retaz_slov}""", mode="w", encoding="utf-8") as subor:
+    with open(f"""slovo{i}""", mode="w", encoding="utf-8") as subor:
         print(a[retaz_slov - 1], file=subor)
